@@ -21,7 +21,7 @@ async def test_grpc_metrics(
     assert len(spans) == 1
 
     span = spans[0]
-    assert span["name"] == "/inference.GRPCInferenceService/ModelInfer"
+    assert span["name"] == "/inference_mlserver.GRPCInferenceService/ModelInfer"
     assert (
         "service.name.testing" in span["resource"]["attributes"]
         and span["resource"]["attributes"]["service.name.testing"] == "mlserver-testing"

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package inference;
+package inference_mlserver;
 
 //
 // Inference Server GRPC endpoints.
